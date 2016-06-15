@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>万花筒</title>
+		<style>
+			*{margin: 0;padding: 0;}
+			body{
+				background: url(img/bg.jpg);
+			}
+			.outer{
+				width: 108px;height:200px;-webkit-transform-style: preserve-3d;
+				-webkit-perspective: 2000;margin: 100px auto;
+			}
+			.inner{
+				width: 108px;height: 200px;-webkit-transform-style: preserve-3d;
+				position:absolute;-webkit-transform: rotateX(10deg);
+			}
+			.inner div{
+				width: 108px;height:200px;
+				position: absolute;
+				top: 0;left: 0;
+				text-align: center;
+				line-height: 200px;
+				-webkit-box-reflect:below 0px -webkit-linear-gradient(rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.8));
+
+			}
+			.inner div img{
+				width: 108px;
+				height:200px;
+				
+			}
+			@-webkit-keyframes move {
+				0% {-webkit-transform: rotateX(-20deg) rotateY(0deg) }
+				100%{-webkit-transform: rotateX(-20deg) rotateY(360deg)}
+			}
+			.inner{-webkit-animation: move 5s linear  infinite;}
+			.inner div:nth-child(1){ -webkit-transform: rotateY(30deg) translateZ(200px);}
+			.inner div:nth-child(2){ -webkit-transform: rotateY(60deg) translateZ(200px);}
+			.inner div:nth-child(3){ -webkit-transform: rotateY(90deg) translateZ(200px);}
+			.inner div:nth-child(4){ -webkit-transform: rotateY(120deg) translateZ(200px);}
+			.inner div:nth-child(5){ -webkit-transform: rotateY(150deg) translateZ(200px);}
+			.inner div:nth-child(6){ -webkit-transform: rotateY(180deg) translateZ(200px);}
+			.inner div:nth-child(7){-webkit-transform: rotateY(210deg) translateZ(200px);}
+			.inner div:nth-child(8){-webkit-transform: rotateY(240deg) translateZ(200px);}
+			.inner div:nth-child(9){-webkit-transform: rotateY(270deg) translateZ(200px);}
+			.inner div:nth-child(10){ -webkit-transform: rotateY(300deg) translateZ(200px);}
+			.inner div:nth-child(11){ -webkit-transform: rotateY(330deg) translateZ(200px);}
+			.inner div:nth-child(12){-webkit-transform: rotateY(360deg) translateZ(200px);}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<div class="inner">
+				<div><img src="img/1.jpg" alt="" /></div>
+				<div><img src="img/2.jpg" alt="" /></div>
+				<div><img src="img/7.jpg" alt="" /></div>
+				<div><img src="img/4.jpg" alt="" /></div>
+				<div><img src="img/5.jpg" alt="" /></div>
+				<div><img src="img/6.jpg" alt="" /></div>
+				<div><img src="img/1.jpg" alt="" /></div>
+				<div><img src="img/2.jpg" alt="" /></div>
+				<div><img src="img/7.jpg" alt="" /></div>
+				<div><img src="img/4.jpg" alt="" /></div>
+				<div><img src="img/5.jpg" alt="" /></div>
+				<div><img src="img/6.jpg" alt="" /></div>
+			</div>
+		</div>
+	</body>
+</html>
