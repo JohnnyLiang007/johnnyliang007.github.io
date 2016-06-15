@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS 3D 六面体</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<style>
+		*{margin:0; padding: 0; list-style: none;}
+		body{
+			background: url(img/bg.jpg); background-size: 100%;
+			-webkit-perspective: 1000;
+		}
+		.box{
+			width: 400px;height: 400px;margin: 200px auto;position: relative;
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: rotateX(13deg);
+			-webkit-animation:move 10s linear infinite;
+		}
+		.minbox{
+			width: 200px;height: 200px;position: absolute;left: 100px;top: 100px;
+			-webkit-transform-style: preserve-3d;
+		}
+		.minbox li{
+			width: 200px;height: 200px;position: absolute;left: 0;top: 0;
+			-webkit-transform: rotateX(90deg) translateZ(100px);
+		}
+		.minbox li:nth-child(1){
+			background: url(img/8.jpg) 0 0 no-repeat;background-size:100% ;
+			-webkit-transform:translateZ(100px);
+		}
+		.minbox li:nth-child(2){
+			background: url(img/9.jpeg) 0 0 no-repeat;background-size:100% ;
+			-webkit-transform: rotateX(90deg) translateZ(100px);
+		}
+		.minbox li:nth-child(3){
+			background: url(img/10.jpg) 0 0 no-repeat;background-size:100% ;
+			-webkit-transform: rotateX(180deg) translateZ(100px);
+		}
+		.minbox li:nth-child(4){
+			background: url(img/11.jpg) 0 0 no-repeat;background-size:100% ;
+			-webkit-transform: rotateX(270deg) translateZ(100px);
+		}
+		.minbox li:nth-child(5){
+			background: url(img/12.jpg) 0 0 no-repeat;background-size:100% ;
+			-webkit-transform: rotateY(90deg) translateZ(100px);
+		}
+		.minbox li:nth-child(6){
+			background: url(img/13.jpg) 0 0 no-repeat;background-size:100% 100%;
+			-webkit-transform: rotateY(-90deg) translateZ(100px);
+		}
+
+
+		.maxbox{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			-webkit-transform-style: preserve-3d;
+		}
+		.maxbox li{
+			width: 400px;
+			height: 400px;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+			opacity: 0.5;
+			-webkit-transition: all 0.5s ease;
+		}
+		.maxbox li:nth-child(1){
+			-webkit-transform: translateZ(200px);background: url(img/14.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(1){
+			-webkit-transform: translateZ(300px);
+		}
+		.maxbox li:nth-child(2){
+			-webkit-transform:rotateX(90deg) translateZ(200px);background: url(img/15.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(2){
+			-webkit-transform:rotateX(90deg) translateZ(300px);
+		}
+		.maxbox li:nth-child(3){
+			-webkit-transform:rotateX(180deg) translateZ(200px);background: url(img/16.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(3){
+			-webkit-transform:rotateX(180deg) translateZ(300px);
+		}
+		.maxbox li:nth-child(4){
+			-webkit-transform:rotateX(270deg) translateZ(200px);background: url(img/17.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(4){
+			-webkit-transform:rotateX(270deg) translateZ(300px);
+		}
+		.maxbox li:nth-child(5){
+			-webkit-transform:rotateY(90deg) translateZ(200px);background: url(img/18.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(5){
+			-webkit-transform:rotateY(90deg) translateZ(300px);
+		}
+		.maxbox li:nth-child(6){
+			-webkit-transform:rotateY(-90deg) translateZ(200px);background: url(img/19.jpg);background-size:100% 100%;
+		}
+		.box:hover ol li:nth-child(6){
+			-webkit-transform:rotateY(-90deg) translateZ(300px);
+		}
+		@-webkit-keyframes move{
+			0%{-webkit-transform:rotateX(13deg) rotateY(0deg);}
+			100%{-webkit-transform:rotateX(13deg) rotateY(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="minbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ol class="maxbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>
