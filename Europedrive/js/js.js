@@ -65,7 +65,7 @@ window.onload=function(){
 		  	success:function(d){
 		  		if(eval('('+d+')').code==0){
 
-		  			window.open("success.html");
+		  			window.location.href ="success.html";
 		  		}else{
 		  			alert(eval('('+d+')').msg)
 		  		}
