@@ -23,7 +23,7 @@ window.onload=function(){
 	  				$(".listbody:gt(10)").show();
 	  			}
 	  		)
-	  		$("#back").click(  			
+	  		$("#back").click(
 	  			function(){
 	  				$(".listbody:gt(10)").hide();
 	  				$(".listbody:lt(9)").show();
@@ -52,7 +52,7 @@ window.onload=function(){
 	  			}
 	  			num++;
 	  		}
-	  		
+
 		 }
 	});
 	function postmessage(name,tel){
@@ -60,23 +60,23 @@ window.onload=function(){
 		console.log(d)
 		$.ajax({
 			type:"POST",
-		 	url: "http://sjz.bokanedu.com/tgr/api/?day=52&&type=og",  
+		 	url: "http://sjz.bokanedu.com/tgr/api/?day=52&&type=og",
 		  	data:d,
 		  	success:function(d){
 		  		if(eval('('+d+')').code==0){
-		  			
+
 		  			window.open("success.html");
 		  		}else{
 		  			alert(eval('('+d+')').msg)
 		  		}
 		  	}
 		})
-	}	
-	
+	}
+
 	$("#drivesub").click(function(){
 		var nameaa=$("#yourname").val();
 		var telaa=$("#yourtel").val();
-		postmessage(nameaa,telaa);	
+		postmessage(nameaa,telaa);
 	})
-	
+
 }
