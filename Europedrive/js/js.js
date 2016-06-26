@@ -31,24 +31,28 @@ window.onload=function(){
 	  		)
 	  		window.localStorage.setItem("data",data)
 	  		for(var i=0;i<winLen;i++){
+
 	  			if(i<9){
+
 	  				$("#winners").append(
 		  				'<ul class="listbody" id="listbody">'+
 							'<li class="col1"><span class="rowid">0'+num+'</span><span class="qi">期</span></li>'+
 							'<li class="col2">'+winData.data[i].name+'</li>'+
-							'<li class="col3 tel">'+winData.data[i].tele+'</li>'+
+							'<li class="col3 tel">'+winData.data[i].tele.replace(winData.data[i].tele.slice(4,7),"***")+'</li>'+
 							'<li class="col4">'+winData.data[i].gift+'</li>'+
 						'</ul>'
 		  			)
+
 	  			}else{
 	  				$("#winners").append(
 		  				'<ul class="listbody" id="listbody">'+
 							'<li class="col1"><span class="rowid">'+num+'</span><span class="qi">期</span></li>'+
 							'<li class="col2">'+winData.data[i].name+'</li>'+
-							'<li class="col3 tel">'+winData.data[i].tele+'</li>'+
+							'<li class="col3 tel">'+winData.data[i].tele.replace(winData.data[i].tele.slice(4,7),"***")+'</li>'+
 							'<li class="col4">'+winData.data[i].gift+'</li>'+
 						'</ul>'
 		  			)
+
 	  			}
 	  			num++;
 	  		}
