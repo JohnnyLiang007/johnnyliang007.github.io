@@ -21,7 +21,7 @@ window.onload=function(){
 		}
 	}
 //	window.addEventListener("load",function(){},false)
-	
+
 }
 
 //第一组大图轮播图
@@ -74,7 +74,7 @@ function lunbo2(){
 	    autoplayDisableOnInteraction:false,
 	    nextButton: '.swiper-button-next',
 	    prevButton: '.swiper-button-prev',
-	    	 
+
     })
 	var mySwiper3 = new Swiper ('.show2', {
 	  	loop: true,
@@ -83,7 +83,7 @@ function lunbo2(){
 	 	spaceBetween : 20,
 	    autoplay:1500,
 	    autoplayDisableOnInteraction:false,
-	    
+
     })
     //鼠标放上悬停
 	mySwiper2.params.control = mySwiper3;
@@ -133,7 +133,7 @@ function txtPt4(){
 	function txtShow3(){
 		var scrolltop3=document.body.scrollTop||window.pageYOffset||document.documentElement.scrollTop;
 		if(scrolltop3>=screenH*2.5){
-		
+
 			txt4.style.marginTop=45+"px";
 			txt4h[0].style.opacity=1;
 			txt4p[0].style.opacity=1;
@@ -166,7 +166,7 @@ function txtPt5(){
 //setInterval(function(){
 //	var stp=$("body").scrollTop();
 //	if(stp>screenH*3){
-//		
+//
 //		$(".txt5 h2,.txt5 h2").animate({"opacity":"1"},3000)
 //		$(".txt5").animate({"marginTop":"45px"},2000)
 //	}
@@ -191,7 +191,7 @@ function showwindow(){
 			newshow.style.width="100%";
 		}
 	}
-	
+
 	for (var i = 0; i < show2.length; i++) {
 		show2[i].indexSb=i;
 		show2[i].onclick=function(){
@@ -200,10 +200,10 @@ function showwindow(){
 			cover.style.display="block";
 			cHidden.style.zIndex=998;
 			cHidden.style.opacity=1;
-			newshow.style.width="100%";	
+			newshow.style.width="100%";
 		}
 	}
-	
+
 }
 // 显现窗口
 
@@ -328,7 +328,7 @@ setInterval(function(){
 //				contxt.closePath();
 //				contxt.lineWidth=posz;
 //				contxt.strokeStyle="white";
-//				contxt.stroke();	
+//				contxt.stroke();
 //			}
 //		}
 //		timedraw=setInterval(draw,1000)
@@ -343,21 +343,21 @@ function lunbocar(){
 	    autoplayDisableOnInteraction:false,
 	    nextButton: '.swiper-button-next',
 	    prevButton: '.swiper-button-prev',
-	    	 
+
     })
 	var mySwiper5 = new Swiper ('.lunbocarb', {
 	  	loop: true,
 	  	slidesPerView : 4,
 	    autoplay:2000,
 	    autoplayDisableOnInteraction:false,
-	    
+
     })
 	var mySwiper6= new Swiper ('.lunbocarc', {
 	  	loop: true,
 	  	slidesPerView : 4,
 	    autoplay:2000,
 	    autoplayDisableOnInteraction:false,
-	    
+
     })
     //鼠标放上悬停
 	mySwiper4.params.control = mySwiper5;
@@ -392,15 +392,15 @@ function playr(){
 	}
 	playi++;
 }
-$(".autoprev").click(function(){	
+$(".autoprev").click(function(){
 	$(".autoplay1,.autoplay2").delay(600).animate({"opacity":1},500)
 	$(this).parent().parent().parent().animate({"opacity":0},500)
-	
+
 })
-$(".autonext").click(function(){	
+$(".autonext").click(function(){
 	$(".autoplay1,.autoplay2").animate({"opacity":1},500)
 	$(this).parent().parent().parent().animate({"opacity":0},500)
-	
+
 })
 
 var autoi=0
@@ -445,7 +445,7 @@ function autor(){
 setInterval(function(){
 	var stp=$("body").scrollTop();
 	if(stp>screenH*5){
-		
+
 		$(".txt6 h2,.txt6 h2").animate({"opacity":"1"},3000)
 		$(".txt6").animate({"marginTop":"45px"},2000)
 	}
@@ -455,7 +455,7 @@ setInterval(function(){
 setInterval(function(){
 	var stp=$("body").scrollTop();
 	if(stp>screenH*6){
-		
+
 		$(".txt7 h2,.txt7 h2").animate({"opacity":"1"},3000)
 		$(".txt7").animate({"marginTop":"45px"},2000)
 	}
@@ -463,24 +463,24 @@ setInterval(function(){
 
 //第七轮播
 $(function(){
-	
+
 	var index=0;
 	var timeshow=null;
 	var len=$(".outer7 div").length
-	
+
 	$(".outer7").css({width:$("#pic1").width()*len})
 	var maxLeft=$("#pic1").width()*(len-1)
 	$(".lunbo7bot div").css({"opacity":"0.4"}).mouseenter(function(){
 		index=$(".lunbo7bot div").index(this)
 		picsShow(index)
 	}).eq(0).trigger("mouseenter")
-	
+
 	$(".prev,.next").css({"opacity":"0.2"}).hover(function(){
 		$(this).stop(true,false).animate({"opacity":"0.6"},300)
 	},function(){
 		$(this).stop(true,false).animate({"opacity":"0.2"},300)
 	})
-	
+
 	$(".prev").click(function(){
 		index-=1;
 		if(index==-1){
@@ -488,7 +488,7 @@ $(function(){
 		}
 		picsShow(index)
 	})
-	
+
 	$(".next").click(function(){
 		index+=1;
 		if(index==len){
@@ -496,7 +496,7 @@ $(function(){
 		}
 		picsShow(index)
 	})
-	
+
 	$(".lunbo7").hover(function(){
 		clearInterval(timeshow)
 	},function (){
@@ -507,23 +507,23 @@ $(function(){
 			index=0;
 		}},1000)
 		}).trigger("mouseleave");
-		
-	
-	
-	function picsShow(index){	
-		
+
+
+
+	function picsShow(index){
+
 		var nowLeft=$("#pic1").width()*index
 		// console.log($(".lunbo7").scrollLeft())
 		if(nowLeft==0){
-			
+
 			$(".lunbo7").stop(true,false).animate({scrollLeft:0},0)
 		}else{
 			$(".lunbo7").stop(true,false).animate({scrollLeft:nowLeft},300)
 		}
-		
+
 		$(".lunbo7bot div").stop(true,false).animate({"opacity":"0.4"},300).eq(index).stop(true,false).animate({"opacity":"1"},300)
 	}
-	
+
 })
 setInterval(function(){
 	var stp=$("body").scrollTop();
@@ -533,7 +533,7 @@ setInterval(function(){
 	if(stp<200){
 		$(".betop").css({"display":"none"})
 	}
-	
+
 },500)
 
 $(".betop").click(function(){
