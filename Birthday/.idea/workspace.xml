@@ -19,8 +19,8 @@
       <file leaf-file-name="Happy Birthday.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Happy Birthday.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="396" column="19" lean-forward="true" selection-start-line="396" selection-start-column="19" selection-end-line="396" selection-end-column="19" />
+            <state relative-caret-position="141">
+              <caret line="213" column="25" lean-forward="false" selection-start-line="213" selection-start-column="25" selection-end-line="213" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="HappyBirthday.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/HappyBirthday.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="854" column="1" lean-forward="false" selection-start-line="854" selection-start-column="1" selection-end-line="854" selection-end-column="1" />
+            <state relative-caret-position="301">
+              <caret line="750" column="17" lean-forward="true" selection-start-line="750" selection-start-column="17" selection-end-line="750" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -93,8 +93,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="64" />
+            <state relative-caret-position="243">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -103,8 +103,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="235" column="1" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="235" selection-end-column="1" />
+            <state relative-caret-position="247">
+              <caret line="129" column="12" lean-forward="true" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -148,15 +148,15 @@
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$USER_HOME$/Downloads/jiaoben3140/index.html" />
         <option value="$USER_HOME$/Desktop/Mother生日快乐Demo/BirthdayCake.html" />
-        <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$USER_HOME$/Desktop/Mother生日快乐Demo/Memories.html" />
         <option value="$USER_HOME$/Desktop/Mother生日快乐Demo/css/styless.css" />
         <option value="$PROJECT_DIR$/css/Memories.css" />
         <option value="$PROJECT_DIR$/Memories.html" />
-        <option value="$PROJECT_DIR$/css/HappyBirthday.css" />
         <option value="$PROJECT_DIR$/Happy Birthday.html" />
+        <option value="$PROJECT_DIR$/css/index.css" />
+        <option value="$PROJECT_DIR$/css/HappyBirthday.css" />
       </list>
     </option>
   </component>
@@ -197,6 +197,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Birthday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -327,12 +341,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502420996126</updated>
-      <workItem from="1502420997724" duration="14427000" />
+      <workItem from="1502420997724" duration="14984000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14427000" />
+    <option name="totallyTimeSpent" value="14984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1040" extended-state="6" />
@@ -512,10 +526,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/jquery.fullPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="-1551">
+          <caret line="157" column="46" lean-forward="false" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
+          <folding>
+            <marker date="1421413986000" expanded="true" signature="43398:43439" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -530,44 +554,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.fullPage.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1551">
-          <caret line="157" column="46" lean-forward="false" selection-start-line="157" selection-start-column="46" selection-end-line="157" selection-end-column="46" />
-          <folding>
-            <marker date="1421413986000" expanded="true" signature="43398:43439" ph="..." />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="235" column="1" lean-forward="false" selection-start-line="126" selection-start-column="0" selection-end-line="235" selection-end-column="1" />
+        <state relative-caret-position="247">
+          <caret line="129" column="12" lean-forward="true" selection-start-line="129" selection-start-column="12" selection-end-line="129" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/HappyBirthday.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="854" column="1" lean-forward="false" selection-start-line="854" selection-start-column="1" selection-end-line="854" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="301">
+          <caret line="750" column="17" lean-forward="true" selection-start-line="750" selection-start-column="17" selection-end-line="750" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Happy Birthday.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="396" column="19" lean-forward="true" selection-start-line="396" selection-start-column="19" selection-end-line="396" selection-end-column="19" />
+        <state relative-caret-position="141">
+          <caret line="213" column="25" lean-forward="false" selection-start-line="213" selection-start-column="25" selection-end-line="213" selection-end-column="25" />
           <folding />
         </state>
       </provider>
