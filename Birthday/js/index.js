@@ -4,7 +4,7 @@
 $('#login-button').click(function (event) {
     var userName=document.getElementById("userName").value;
     var pwd=document.getElementById("pwd").value;
-    if(userName=="Mother" &&  pwd=="Iloveyou"){
+    if(userName=="郭爱云" &&  pwd=="123456"){
         event.preventDefault();
         $('form').fadeOut(500);
         $('.title').html(userName+' Happy Birthday!')
