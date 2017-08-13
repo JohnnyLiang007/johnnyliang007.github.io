@@ -10,6 +10,12 @@ $('#login-button').click(function (event) {
         $('.title').html(userName+' Happy Birthday!')
         $('.wrapper').addClass('form-success');
         setTimeout(function(){location.href="Happy Birthday.html";},2000);
+    }else if(userName=="王慧宁" &&  pwd=="123456"){
+        event.preventDefault();
+        $('form').fadeOut(500);
+        $('.title').html(userName+' Happy Birthday!')
+        $('.wrapper').addClass('form-success');
+        setTimeout(function(){location.href="HappyBirthday—1.html";},2000);
     }
     else{
         alert("Wrong Password");
