@@ -30,10 +30,27 @@
             <li></li>
             <li></li>
         </ul>
+        <div class="demo"></div>
     </div>
 </div>
 <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="js/index.js" type="text/javascript"></script>
-
+<script src="js/jquery.fireworks.js"></script>
+<script>
+    $('.demo').fireworks({
+        sound: false, // sound effect
+        opacity: 0.9,
+        width: '100%',
+        height: '100%'
+    });
+    setTimeout(function(){
+        //$('.demo').hide();
+        $('.demo').css({'opacity':'0'});
+        setTimeout(function(){
+            $('.container').show();
+            $('.bg-bubbles').show();
+        },300);
+    },10000);
+</script>
 </body>
 </html>
