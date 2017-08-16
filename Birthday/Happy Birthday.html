@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>Happy Birthday!</title>
     <script>
-        function audioAutoPlay(id){
-            var audio = document.getElementById(id);
-            audio.play();
-            document.addEventListener("WeixinJSBridgeReady", function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('music');
                 audio.play();
-            }, false);
-        }
-        audioAutoPlay('music');
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
     </script>
     <link rel="stylesheet" href="css/HappyBirthday.css" media="screen" type="text/css" />
     <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
