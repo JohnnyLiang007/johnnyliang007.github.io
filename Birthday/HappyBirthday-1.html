@@ -252,8 +252,7 @@
     </p>
     <br />
     <p id="message">
-        这个世界上有两种女孩最可爱：一种是漂亮；一种是聪慧，而你是漂亮聪慧的女孩！<br />
-        此贺卡献给我们漂亮聪慧的小宁同学，希望她学业有成，天天开心，永远快乐！
+
     </p>
     <ul class="bg-bubbles">
         <li></li>
@@ -290,6 +289,23 @@
 <canvas id="canvas" width="200px" height="200px"></canvas>
 
 <script>
+    var str=" 这个世界上有两种女孩最可爱：一种是漂亮；一种是聪慧，而你是漂亮聪慧的女孩！<br />此贺卡献给我们漂亮聪慧的王慧宁同学，希望你学业有成，天天开心，永远快乐！";
+    var i = 0;
+    function typing(){
+        var divTyping = document.getElementById('message');
+        if (i <= str.length) {
+            divTyping.innerHTML = str.slice(0, i++) + '_';
+            setTimeout('typing()', 200);//递归调用
+        }
+        else{
+            divTyping.innerHTML = str;//结束打字,移除 _ 光标
+        }
+    }
+    typing();
+
+
+
+
    /* window.requestAnimFrame = ( function() {
         return window.requestAnimationFrame ||
             window.webkitRequestAnimationFrame ||

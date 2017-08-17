@@ -14,6 +14,9 @@
             }
             audioAutoPlay();
         });
+        wx.ready(function(){
+            document.getElementById('audio').play();
+        });
     </script>
     <link rel="stylesheet" href="css/HappyBirthday.css" media="screen" type="text/css" />
     <!--<link rel="stylesheet" type="text/css" href="css/index.css">-->
@@ -313,10 +316,6 @@
         }
     }
     typing();
-
-
-
-
      window.requestAnimFrame = ( function() {
      return window.requestAnimationFrame ||
      window.webkitRequestAnimationFrame ||
