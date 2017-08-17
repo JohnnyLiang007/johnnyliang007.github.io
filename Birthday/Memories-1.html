@@ -48,7 +48,7 @@
         }
         img{
             width: 60%;
-            height:80%;
+            height:40%;
         }
         .bg-bubbles {
             position: absolute;
@@ -162,7 +162,7 @@
         }
     </style>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('touchstart', function () {
             function audioAutoPlay() {
                 var audio = document.getElementById('music');
                 audio.play();
@@ -171,6 +171,9 @@
                 }, false);
             }
             audioAutoPlay();
+        });
+        wx.ready(function(){
+            document.getElementById('music').play();
         });
     </script>
 </head>
@@ -259,14 +262,6 @@
 
 <!-- Initialize Swiper -->
 <script>
-    function audioAutoPlay(id){
-        var audio = document.getElementById(id);
-        audio.play();
-        document.addEventListener("WeixinJSBridgeReady", function () {
-            audio.play();
-        }, false);
-    }
-    audioAutoPlay('music');
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
