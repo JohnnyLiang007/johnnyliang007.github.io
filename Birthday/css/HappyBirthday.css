@@ -633,12 +633,12 @@ background-position: top right;
 .button-style1 {
   position:absolute;
   left:20%;
-  animation:btn1 15s;
+  animation:btn1 36s;
 }
 .button-style2 {
   position:absolute;
   left:68%;
-  animation:btn2 15s;
+  animation:btn2 36s;
 }
 @keyframes btn1 {
   0% {
