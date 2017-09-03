@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Love you Mum</title>
+    <title>BestWishes!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
     <!-- Link Swiper's CSS -->
@@ -220,13 +220,16 @@
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        effect : 'fade',
-        fade: {
-            crossFade: true,
+        effect : 'cube',
+        cube: {
+            slideShadows: true,
+            shadow: true,
+            shadowOffset: 30,
+            shadowScale: 0.8
         },
-        spaceBetween: 30,
+        spaceBetween: 1,
         centeredSlides: true,
-        autoplay: 5000,
+        autoplay: 6000,
         autoplayDisableOnInteraction: false
     });
 </script>
