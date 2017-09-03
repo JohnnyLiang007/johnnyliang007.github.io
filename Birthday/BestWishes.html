@@ -128,22 +128,7 @@
     <script src="js/jquery-2.1.1.min.js"></script>
 
     <script src="js/ipresenter.packed.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('#ipresenter').iPresenter({
-                animSpeed: 2000,
-                timer: '360Bar',
-                timerDiameter: 60,
-                timerStroke: 5,
-                timerPadding: 5,
-                timerColor: '#000',
-                timerBg: '#FFF',
-                timerOpacity: 0.4,
-                directionNav: false,
-                controlNav: true
-            });
-        });
-    </script>
+
 
 </head>
 
@@ -216,6 +201,12 @@
 
 </div>
 
-
+<script>
+    $(document).ready(function(){
+        $('#ipresenter').iPresenter({
+            animSpeed: 2000
+        });
+    });
+</script>
 </body>
 </html>
