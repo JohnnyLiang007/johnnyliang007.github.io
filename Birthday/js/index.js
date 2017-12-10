@@ -21,7 +21,7 @@ $('#login-button').click(function (event) {
         $('form').fadeOut(500);
         $('.title').html(userName+' Happy Birthday!');
         $('.wrapper').addClass('form-success');
-        setTimeout(function(){location.href="HappyBirthday-1.html";},2000);
+        setTimeout(function(){location.href="Happy-Birthday.html";},2000);
     }
     else{
         alert("Wrong Password");
