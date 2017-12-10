@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BestWishes!</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Google Webfonts and our stylesheet -->
+
+    <link rel="stylesheet" href="css/demo1.css"/>
+    <style>
+
+        .bg-bubbles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index:999;
+        }
+        .bg-bubbles li {
+            position: absolute;
+            list-style: none;
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.15);
+            bottom: -160px;
+            -webkit-animation: square 30s infinite;
+            animation: square 30s infinite;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+        .bg-bubbles li:nth-child(1) {
+            left: 10%;
+        }
+        .bg-bubbles li:nth-child(2) {
+            left: 20%;
+            width: 80px;
+            height: 80px;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-duration: 17s;
+            animation-duration: 17s;
+        }
+        .bg-bubbles li:nth-child(3) {
+            left: 25%;
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+        .bg-bubbles li:nth-child(4) {
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            -webkit-animation-duration: 22s;
+            animation-duration: 22s;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        .bg-bubbles li:nth-child(5) {
+            left: 70%;
+        }
+        .bg-bubbles li:nth-child(6) {
+            left: 80%;
+            width: 120px;
+            height: 120px;
+            -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .bg-bubbles li:nth-child(7) {
+            left: 32%;
+            width: 160px;
+            height: 160px;
+            -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+        }
+        .bg-bubbles li:nth-child(8) {
+            left: 55%;
+            width: 20px;
+            height: 20px;
+            -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+            -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+        }
+        .bg-bubbles li:nth-child(9) {
+            left: 25%;
+            width: 10px;
+            height: 10px;
+            -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+            -webkit-animation-duration: 40s;
+            animation-duration: 40s;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .bg-bubbles li:nth-child(10) {
+            left: 90%;
+            width: 160px;
+            height: 160px;
+            -webkit-animation-delay: 11s;
+            animation-delay: 11s;
+        }
+        @-webkit-keyframes square {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            100% {
+                -webkit-transform: translateY(-900px) rotate(600deg);
+                transform: translateY(-900px) rotate(600deg);
+            }
+        }
+        @keyframes square {
+            0% {
+                -webkit-transform: translateY(0);
+                transform: translateY(0);
+            }
+            100% {
+                -webkit-transform: translateY(-900px) rotate(600deg);
+                transform: translateY(-900px) rotate(600deg);
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--<link rel="stylesheet" href="css/demo2.css" />-->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <script src="js/ipresenter.packed.js"></script>
+
+
+</head>
+
+<body>
+<audio id="music" autoplay="autoplay" loop="loop" preload="auto" src="music/flower.mp3" type="audio/wav"></audio>
+<div class="container">
+
+    <div id="ipresenter">
+        <div class="step" data-x="0" data-y="0" data-thumbnail="img/1-1.JPG">
+            <img src="img/1-1.JPG" />
+        </div>
+
+        <div class="step" data-x="1500" data-y="0" data-rotatex="180" data-easing="easeInOutQuint" data-pausetime="15000" data-thumbnail="img/1-1.JPG">
+            <img src="img/T-12.JPG" />
+        </div>
+
+        <div class="step" data-x="3000" data-y="0" data-rotatey="180" data-pausetime="2000" data-thumbnail="img/3-1.JPG">
+            <img src="img/T-1.JPG" />
+        </div>
+
+        <!--<div class="step" data-x="4500" data-y="0" data-rotatex="180" data-thumbnail="img/4-1.JPG">-->
+        <!--<img src="img/4-1.JPG" />-->
+        <!--</div>-->
+
+        <div class="step" data-x="6000" data-y="0" data-rotate="180" data-thumbnail="img/5-1.JPG">
+            <img src="img/T-3.JPG" />
+        </div>
+
+        <div class="step" data-x="7500" data-y="0" data-rotatey="180" data-thumbnail="img/6-1.JPG">
+            <img src="img/T-4.JPG" />
+        </div>
+
+        <div class="step" data-x="9000" data-y="0" data-thumbnail="img/thumbs/7-1.JPG">
+            <img src="img/T-5.JPG" />
+        </div>
+
+        <div class="step" data-x="10500" data-y="0" data-rotate="80" data-thumbnail="img/8-1.JPG">
+            <img src="img/T-6.JPG" />
+        </div>
+
+        <div class="step" data-x="12000" data-y="0" data-rotatex="180" data-thumbnail="img/9-1.JPG">
+            <img src="img/T-7.JPG" />
+        </div>
+
+        <div class="step" data-x="13500" data-y="0" data-rotatey="180" data-scale="0.6" data-thumbnail="img/thumbs/895601241627526.jpg">
+            <img src="img/T-8JPG.JPG" />
+        </div>
+
+        <div class="step" data-x="15000" data-y="0" data-rotatey="-180" data-thumbnail="img/thumbs/895601241627606.jpg">
+            <img src="img/T-10.JPG" />
+        </div>
+
+        <!--<div class="step" data-x="16500" data-y="0" data-rotatey="180" data-thumbnail="img/thumbs/895601241627621.jpg">-->
+        <!--<img src="img/12-1.jpg" />-->
+        <!--</div>-->
+
+    </div>
+    <ul class="bg-bubbles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#ipresenter').iPresenter({
+            animSpeed: 2000
+        });
+    });
+</script>
+</body>
+</html>
